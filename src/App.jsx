@@ -2,8 +2,27 @@ import { useState , useEffect} from 'react'
 
 import './App.css'
 
+
+const changeWidth = () => {
+  const [responsive , setResponsive] = useState(window.innerWidth)
+  useEffect(() => {
+    const Resize = () => {
+    setResponsive(window.innerWidth)
+    console.log('responsive')
+  }
+  window.addEventListener("resize" , Resize)
+  return () => window.removeEventListener("resize" , Resize)
+  
+  } , [])
+  return responsive
+}
+  
 export default function App() {
+
   const [currentIndex , setCurrentIndex] = useState(0)
+  const width = changeWidth()
+  const isMobile = width > 750
+
   const slides = [
     {image : '/avatar-anisha.png', name : 'Anisha Li' , text : `“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”`},
     {image : '/avatar-ali.png', name : 'Ali Bravo' , text : `“We have been able to cancel so many other subscriptions since using 
@@ -18,7 +37,7 @@ export default function App() {
 const changeSlide = () => {
   const isLastSlide = currentIndex === slides.length - 1;
   setCurrentIndex(prev => (prev + 1) % slides.length)
-  console.log(currentIndex)
+  // console.log(currentIndex)
 }
 useEffect(() => {
   const interval = setInterval(changeSlide , 5000)
@@ -83,7 +102,8 @@ useEffect(() => {
       </div>
       </div>
       </div>
-      <div className="">
+
+      <div className="block md:hidden">
         <h2 className="text-[hsl(228,39%,23%)] font-[700] text-center my-2 text-[1.8rem]">What they’ve said</h2>
         <div className="flex justify-center my-4" onClick={changeSlide}>
         <img src={slides[currentIndex].image} alt="" srcset="" className='w-1/5'/>
@@ -91,7 +111,39 @@ useEffect(() => {
         <h4 className="text-center text-[1.2rem] font-bold text-[hsl(228,39%,23%)]">{slides[currentIndex].name}</h4>
         <p className="text-[hsl(0,0%,4%)] text-center text-sm my-2 w-4/5 m-auto">{slides[currentIndex].text}</p>
       </div>
-
+      <div className="hidden md:block flex overflow-x-scroll">
+      <h2 className="text-[hsl(228,39%,23%)] font-[700] text-center my-2 text-[1.8rem]">What they’ve said</h2>
+      <div className="flex">
+      <div className="w-1/4 bg-[hsl(0,0%,98%)] m-2">
+      <div className="flex justify-center my-4 " onClick={changeSlide}>
+        <img src={slides[0].image} alt="" srcset="" className='w-1/5'/>
+        </div>
+        <h4 className="text-center text-[1.2rem] font-bold text-[hsl(228,39%,23%)]">{slides[0].name}</h4>
+        <p className="text-[hsl(0,0%,4%)] text-center text-sm my-2 w-4/5 m-auto">{slides[0].text}</p>
+        </div>
+        <div className="w-1/4 bg-[hsl(0,0%,98%)] m-2">
+      <div className="flex justify-center my-4 " onClick={changeSlide}>
+        <img src={slides[1].image} alt="" srcset="" className='w-1/5'/>
+        </div>
+        <h4 className="text-center text-[1.2rem] font-bold text-[hsl(228,39%,23%)]">{slides[1].name}</h4>
+        <p className="text-[hsl(0,0%,4%)] text-center text-sm my-2 w-4/5 m-auto">{slides[1].text}</p>
+        </div>
+        <div className="w-1/4 bg-[hsl(0,0%,98%)] m-2">
+      <div className="flex justify-center my-4 " onClick={changeSlide}>
+        <img src={slides[2].image} alt="" srcset="" className='w-1/5'/>
+        </div>
+        <h4 className="text-center text-[1.2rem] font-bold text-[hsl(228,39%,23%)]">{slides[2].name}</h4>
+        <p className="text-[hsl(0,0%,4%)] text-center text-sm my-2 w-4/5 m-auto">{slides[2].text}</p>
+        </div>
+        <div className="w-1/4 bg-[hsl(0,0%,98%)] m-2">
+      <div className="flex justify-center my-4 " onClick={changeSlide}>
+        <img src={slides[3].image} alt="" srcset="" className='w-1/5'/>
+        </div>
+        <h4 className="text-center text-[1.2rem] font-bold text-[hsl(228,39%,23%)]">{slides[3].name}</h4>
+        <p className="text-[hsl(0,0%,4%)] text-center text-sm my-2 w-4/5 m-auto">{slides[3].text}</p>
+        </div>
+        </div>
+      </div>
       <div className="bg-[#f25f3a]">
         <div className="md:max-w-[750px] m-auto flex flex-col md:flex-row justify-between">
         <h1 className="text-3xl md:text-left text-white font-bold w-[90%] md:w-[40%] m-auto md:m-0 text-center p-4">Simplify how your team works today.</h1>
@@ -115,11 +167,11 @@ useEffect(() => {
         </div>
         <div className="flex flex-col md:flex-col-reverse justify-between md:w-[20%]">
         <div className="flex justify-evenly">
-          <img src="" alt="" srcset="./icon-facebook.svg" className='w-[30px] mx-1'/>
-          <img src="" alt="" srcset="./icon-instagram.svg" className='w-[30px] mx-1'/>
-          <img src="" alt="" srcset="./icon-pinterest.svg" className='w-[30px] mx-1'/>
-          <img src="" alt="" srcset="./icon-twitter.svg"  className='w-[30px] mx-1'/>
-          <img src="" alt="" srcset="./icon-youtube.svg"  className='w-[30px] mx-1'/>
+          <img src="./icon-facebook.svg" alt="" srcset="" className='w-[30px] mx-1'/>
+          <img src="./icon-instagram.svg" alt="" srcset="" className='w-[30px] mx-1'/>
+          <img src="./icon-pinterest.svg" alt="" srcset="" className='w-[30px] mx-1'/>
+          <img src="./icon-twitter.svg" alt="" srcset=""  className='w-[30px] mx-1'/>
+          <img src="./icon-youtube.svg" alt="" srcset=""  className='w-[30px] mx-1'/>
         </div>
         <div className="flex justify-center mt-4" >
         <img src="/white-log.svg" alt="Logo of company" srcset="" />
