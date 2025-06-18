@@ -150,7 +150,8 @@ useEffect(() => {
         <button className="py-2 px-6 md:m-0 rounded-2xl my-2 m-auto bg-white shadow-[hsl(12,88%,59%)] text-[hsl(12,88%,59%)] self-center font-semibold">Get Started</button>
         </div>
       </div>
-      <div className="border-black bg-[hsl(233,12%,13%)] ">
+      <div className=" bg-[hsl(233,12%,13%)] ">
+        <div className="md:max-w-[750px] m-auto ">
         <div className="flex flex-col md:flex-row-reverse md:justify-evenly">
         <div className="flex w-4/5 md:w-2/6 m-auto  justify-between md:justify-center">
           <input type="text" name="" id="" placeholder='Updates in your inbox…' className="outline-none border-none p-2 rounded-2xl"/>
@@ -179,6 +180,7 @@ useEffect(() => {
         </div>
         </div>
         <p className="text-[hsl(0,0%,98%)] text-center text-xs my-2">Copyright 2020. All Rights Reserved</p>
+      </div>
       </div>
     </div>
   )
