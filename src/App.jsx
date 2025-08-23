@@ -47,7 +47,7 @@ useEffect(() => {
   return (
     <div className="font-bevietnam  border-black overflow-hidden">
         {/* <img src="/bg-tablet-pattern.svg" alt="" srcset="" className='absolute -top-0 left-20 -z-10 '/> */}
-      <div className="flex justify-between  border-red-600 items-center p-2 my-4 m-auto md:max-w-[750px]">
+      <div className="flex justify-between  border-red-600 items-center p-2 px-4 my-4 m-auto md:max-w-[750px]">
       <img src="/logo.svg" alt="Logo of company" srcset="" />
       <img src="/icon-hamburger.svg" alt="hamburger icon" srcset="" />
       </div>
