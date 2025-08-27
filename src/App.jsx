@@ -47,56 +47,54 @@ useEffect(() => {
   return (
     <div className="font-bevietnam  border-black overflow-hidden">
         {/* <img src="/bg-tablet-pattern.svg" alt="" srcset="" className='absolute -top-0 left-20 -z-10 '/> */}
-      <div className="flex justify-between border-red-600 items-center my-8 px-4 m-auto md:max-w-[750px]">
+      <div className="flex justify-between border-red-600 items-center my-8 px-4 m-auto md:max-w-[1440px]">
       <img src="/logo.svg" alt="Logo of company" srcset="" />
       <img src="/icon-hamburger.svg" alt="hamburger icon" srcset="" />
       </div>
-      <div className="border-black p-2 flex flex-col md:flex-row-reverse md:justify-between md:max-w-[750px] m-auto">
+      <div className="border-black p-2 flex flex-col md:flex-row-reverse md:justify-between md:max-w-[1440px] m-auto md:px-24 md:py-16">
       <div className="border-black md:w-[50%] ">
       <img src="/illustration-intro.svg" alt="Logo of company" srcset="" />
       </div>
       <div className="flex flex-col  border-green-700 md:w-[49%]">
       {/* <img src="/bg-tablet-pattern.svg" alt="" srcset="" className='absolute -top-20 left-20 w-full -z-10 overflow-hidden'/> */}
-        <h2 className="m-2 border-red-500 text-[2.5rem]  text-[hsl(228,39%,23%)]  text-center my-2 font-bold md:text-left md:my-3 leading-tight mt-16 mb-6 ">Bring everyone together to build better products.</h2>
-        <p className="text-[hsl(227,12%,61%)] border-red-600 w-[80%] md:w-[70%] my-2 md:m-0 m-auto md:text-left md:my-3 text-base text-justify leading-relaxed max-w-prose">Manage makes it simple for software teams to plan day-to-day 
+        <h2 className="border-red-500 text-[2.5rem]  text-[hsl(228,39%,23%)]  text-center my-2 font-bold md:text-left leading-tight mt-16 mb-6 md:mt-8 md:mb-4 md:text-4xl ">Bring everyone together to build better products.</h2>
+        <p className="text-[hsl(227,12%,61%)] border-red-600 w-[80%] md:w-[70%] my-2 md:m-0 m-auto md:text-left md:my-3 text-base text-justify leading-relaxed max-w-prose md:text-lg md:leading-loose md:mb-6">Manage makes it simple for software teams to plan day-to-day 
         tasks while keeping the larger team goals in view.</p>
         <button className=" py-2 px-6 my-2 md:my-3 text-white shadow-[hsl(12,88%,59%)] bg-[hsl(12,88%,59%)] self-center md:self-start rounded-full text-[0.8rem] text-bold shadow-md">Get Started</button>
       </div>
       </div>
-      <div className="flex flex-col md:flex-row md:max-w-[750px] m-auto">
+      <div className="flex flex-col md:flex-row md:max-w-[1440px] m-auto md:px-24 md:py-16  ">
       <div className="">
-        <h3 className=" text-[hsl(228,39%,23%)] font-[700] text-center text-[2rem] md:text-left mt-16 mb-6 leading-snug">
+        <h3 className=" text-[hsl(228,39%,23%)] font-[700] text-center text-[2rem] md:text-left mt-16 mb-6 leading-snug md:mt-8 md:mb-4 md:text-4xl ">
         What’s different about Manage?
         </h3>
-        <p className=" text-[hsl(227,12%,61%)] text-center  border-red-600 w-[80%] text-[1.15rem] my-2 m-auto md:text-left md:m-0 text-base text-justify leading-relaxed max-w-prose">Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams.</p>
+        <p className=" text-[hsl(227,12%,61%)] text-center  border-red-600 w-[80%] text-[1.15rem] my-2 m-auto md:text-left md:m-0 text-base text-justify leading-relaxed max-w-prose md:text-lg md:leading-loose md:mb-6">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
       </div>
-      <div className="border-green-600 mt-16">
-      <div className="flex flex-col my-2 mt-8">
-        <div className="flex items-center bg-[hsl(13,100%,96%)] md:bg-white w-[95%] self-end rounded-s-2xl ">
-          <h3 className="p-2 rounded-2xl text-white bg-[#f25f3a] w-[20%] flex items-center justify-center">01</h3>
-          <h4 className="font-bold p-2 text-[hsl(228,39%,23%)] text-[1rem] tracking-wide leading-snug">Track company-wide progress</h4>
+      <div className="border-green-600 mt-16 md:mt-0  md:w-[65%]">
+      <div className="flex flex-col my-2 mt-8 md:m-0 ">
+        <div className="flex items-center bg-[hsl(13,100%,96%)]  md:w-[100%] md:bg-white w-[95%] self-end rounded-s-2xl md:justify-between">
+          <h3 className="p-2 rounded-2xl text-white bg-[#f25f3a] w-[20%] md:w-[15%] flex items-center justify-center md:rounded-full md:text-xl">01</h3>
+          <h4 className="font-bold text-[hsl(228,39%,23%)] text-[1rem] tracking-wide leading-snug border-blue-600 md:w-[80%] md:text-xl">Track company-wide progress</h4>
         </div>
-        <p className="text-[hsl(227,12%,61%)] text-justify border-red-600 w-[90%] md:w-[80%] md:self-end text-[1rem] my-2 m-auto md:m-0 md:pl-2">See how your day-to-day tasks fit into the wider vision. Go from 
+        <p className="text-[hsl(227,12%,61%)] text-justify border-red-600 w-[90%] md:w-[80%]  md:self-end text-[1rem] my-2 m-auto md:m-0 md:text-lg md:leading-loose md:mb-6">See how your day-to-day tasks fit into the wider vision. Go from 
   tracking progress at the milestone level all the way done to the 
   smallest of details. Never lose sight of the bigger picture again.</p>
       </div>
       <div className="flex flex-col my-2 mt-8">
-        <div className="flex items-center bg-[hsl(13,100%,96%)] md:bg-white w-[95%] self-end rounded-s-2xl ">
-          <h3 className="p-2 rounded-2xl text-white bg-[hsl(12,88%,59%)] w-[20%] flex items-center justify-center">02</h3>
-          <h4 className="font-bold p-2 text-[hsl(228,39%,23%)] text-[1rem] tracking-wide leading-snug">Advanced built-in reports</h4>
+        <div className="flex items-center bg-[hsl(13,100%,96%)] md:w-[100%] md:justify-between md:bg-white w-[95%] self-end rounded-s-2xl ">
+          <h3 className="p-2 rounded-2xl text-white bg-[hsl(12,88%,59%)] w-[20%] flex items-center justify-center md:w-[15%]  md:rounded-full md:text-xl">02</h3>
+          <h4 className="font-bold p-2 text-[hsl(228,39%,23%)]  md:w-[80%] text-[1rem] tracking-wide leading-snug md:text-xl ">Advanced built-in reports</h4>
         </div>
-        <p className="text-[hsl(227,12%,61%)] text-justify border-red-600 w-[90%] md:w-[80%] md:self-end text-[1rem] my-2 m-auto md:m-0 md:pl-2 text-base leading-relaxed ">Set internal delivery estimates and track progress toward company 
+        <p className="text-[hsl(227,12%,61%)] text-justify border-red-600 w-[90%] md:w-[80%] md:self-end text-[1rem] my-2 m-auto md:m-0 md:pl-2 text-base leading-relaxed md:text-lg md:leading-loose md:mb-6">Set internal delivery estimates and track progress toward company 
   goals. Our customisable dashboard helps you build out the reports 
   you need to keep key stakeholders informed.</p>
       </div>
       <div className="flex flex-col my-2 mt-8">
-        <div className="flex items-center bg-[hsl(13,100%,96%)] md:bg-white w-[95%] self-end rounded-s-2xl ">
-          <h3 className="p-2 rounded-2xl text-white bg-[hsl(12,88%,59%)] w-[20%] flex items-center justify-center">03</h3>
-          <h4 className="font-bold p-2 text-[hsl(228,39%,23%)] text-[1rem] tracking-wide leading-snug">Everything you need in one place</h4>
+        <div className="flex items-center bg-[hsl(13,100%,96%)] md:bg-white w-[95%] md:w-[100%] md:justify-between self-end rounded-s-2xl ">
+          <h3 className="p-2 rounded-2xl text-white bg-[hsl(12,88%,59%)]  w-[20%] flex items-center justify-center md:w-[15%]  md:rounded-full md:text-xl">03</h3>
+          <h4 className="font-bold p-2 text-[hsl(228,39%,23%)] text-[1rem] tracking-wide leading-snug md:w-[80%] md:text-xl">Everything you need in one place</h4>
         </div>
-        <p className="text-[hsl(227,12%,61%)] text-justify border-red-600 w-[90%] md:w-[80%] md:self-end text-[1rem] my-2 m-auto md:m-0 md:pl-2">Stop jumping from one service to another to communicate, store files, 
+        <p className="text-[hsl(227,12%,61%)] text-justify border-red-600 w-[90%] md:w-[80%] md:self-end text-[1rem] my-2 m-auto md:m-0 md:pl-2 md:text-lg md:leading-loose md:mb-6">Stop jumping from one service to another to communicate, store files, 
   track tasks and share documents. Manage offers an all-in-one team 
   productivity solution.</p>
       </div>
@@ -147,13 +145,13 @@ useEffect(() => {
         </div>
       </div>
       <div className="bg-[#f25f3a] mt-16">
-        <div className="md:max-w-[750px] m-auto flex flex-col md:flex-row justify-between">
+        <div className="md:max-w-[1050px] m-auto flex flex-col md:flex-row justify-between">
         <h1 className="text-4xl md:text-left text-white font-bold w-[90%] md:w-[40%] m-auto md:m-0 text-center p-4 leading-tight">Simplify how your team works today.</h1>
         <button className="py-2 px-6 shadow-lg mt-8 mb-3 md:m-0  my-2 m-auto bg-white shadow-[hsl(12,88%,59%)] text-[hsl(12,88%,59%)] rounded-full self-center font-semibold">Get Started</button>
         </div>
       </div>
       <div className=" bg-[hsl(233,12%,13%)] ">
-        <div className="md:max-w-[750px] m-auto ">
+        <div className="md:max-w-[1050px] m-auto ">
         <div className="flex flex-col md:flex-row-reverse md:justify-evenly">
         <div className="flex w-4/5 md:w-2/6 m-auto  justify-between md:justify-center items-center">
           <input type="text" name="" id="" placeholder='Updates in your inbox…' className="outline-none border-none px-4 py-2 rounded-full"/>
