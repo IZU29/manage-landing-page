@@ -47,9 +47,17 @@ useEffect(() => {
   return (
     <div className="font-bevietnam  border-black overflow-hidden">
         {/* <img src="/bg-tablet-pattern.svg" alt="" srcset="" className='absolute -top-0 left-20 -z-10 '/> */}
-      <div className="flex justify-between border-red-600 items-center my-8 px-4 m-auto md:max-w-[1440px]">
+      <div className="flex justify-between border-red-600 items-center my-8 px-4 m-auto md:max-w-[1440px] md:px-8 md:py-4">
       <img src="/logo.svg" alt="Logo of company" srcset="" />
-      <img src="/icon-hamburger.svg" alt="hamburger icon" srcset="" />
+      <ul className="hidden md:flex w-[45%] justify-between text-[#242d52] text-base font-semibold">
+        <li className="">Pricing</li>
+        <li className="">Product</li>
+        <li className="">About Us</li>
+        <li className="">Careers</li>
+        <li className="">Community</li>
+      </ul>
+      <button className=" py-2 px-6 my-2 md:my-3 text-white shadow-[hsl(12,88%,59%)] bg-[hsl(12,88%,59%)] self-center md:self-start rounded-full text-[0.8rem] text-bold shadow-md hidden md:flex">Get Started</button>
+      <img src="/icon-hamburger.svg" alt="hamburger icon" srcset="" className='md:hidden'/>
       </div>
       <div className="border-black p-2 flex flex-col md:flex-row-reverse md:justify-between md:max-w-[1440px] m-auto md:px-24 md:py-16">
       <div className="border-black md:w-[50%] ">
@@ -57,7 +65,7 @@ useEffect(() => {
       </div>
       <div className="flex flex-col  border-green-700 md:w-[49%]">
       {/* <img src="/bg-tablet-pattern.svg" alt="" srcset="" className='absolute -top-20 left-20 w-full -z-10 overflow-hidden'/> */}
-        <h2 className="border-red-500 text-[2.5rem]  text-[hsl(228,39%,23%)]  text-center my-2 font-bold md:text-left leading-tight mt-16 mb-6 md:mt-8 md:mb-4 md:text-4xl ">Bring everyone together to build better products.</h2>
+        <h2 className="border-red-500 text-[2.5rem]  text-[#242d52]  text-center my-2 font-bold md:text-left leading-tight mt-16 mb-6 md:mt-8 md:mb-4 md:text-4xl ">Bring everyone together to build better products.</h2>
         <p className="text-[hsl(227,12%,61%)] border-red-600 w-[80%] md:w-[70%] my-2 md:m-0 m-auto md:text-left md:my-3 text-base text-justify leading-relaxed max-w-prose md:text-lg md:leading-loose md:mb-6">Manage makes it simple for software teams to plan day-to-day 
         tasks while keeping the larger team goals in view.</p>
         <button className=" py-2 px-6 my-2 md:my-3 text-white shadow-[hsl(12,88%,59%)] bg-[hsl(12,88%,59%)] self-center md:self-start rounded-full text-[0.8rem] text-bold shadow-md">Get Started</button>
@@ -145,8 +153,8 @@ useEffect(() => {
         </div>
       </div>
       <div className="bg-[#f25f3a] mt-16">
-        <div className="md:max-w-[1050px] m-auto flex flex-col md:flex-row justify-between">
-        <h1 className="text-4xl md:text-left text-white font-bold w-[90%] md:w-[40%] m-auto md:m-0 text-center p-4 leading-tight">Simplify how your team works today.</h1>
+        <div className="md:max-w-[1050px] m-auto flex flex-col md:flex-row justify-between  md:px-24 md:py-16">
+        <h1 className="text-4xl md:text-left text-white font-bold w-[90%] md:w-[60%] m-auto md:m-0 text-center p-4 leading-tight md:text-4xl md:mb-4 mt-8">Simplify how your team works today.</h1>
         <button className="py-2 px-6 shadow-lg mt-8 mb-3 md:m-0  my-2 m-auto bg-white shadow-[hsl(12,88%,59%)] text-[hsl(12,88%,59%)] rounded-full self-center font-semibold">Get Started</button>
         </div>
       </div>
