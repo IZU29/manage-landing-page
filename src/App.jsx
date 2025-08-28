@@ -121,7 +121,8 @@ useEffect(() => {
       <div className="hidden md:block  ">
       <h2 className="text-[hsl(228,39%,23%)] font-[700] text-center my-2 text-[1.8rem]">What they’ve said</h2>
       <div className="flex overflow-x-auto">
-      <div className="w-1/4 min-w-[400px] bg-[hsl(0,0%,98%)] m-2">
+      <div className="w-1/4 min-w-[400px] relative m-2">
+        <div className="bg-[hsl(0,0%,98%)] absolute inset-0 top-1/4 -z-10"></div>
       <div className="flex justify-center my-4 " onClick={changeSlide}>
         <img src={slides[0].image} alt="" srcset="" className='w-1/5 mt-8'/>
         </div>
@@ -129,21 +130,24 @@ useEffect(() => {
         <p className=" text-center  text-[hsl(227,12%,61%)] my-2 w-4/5 m-auto mt-8 leading-relaxed text-base">{slides[0].text}</p>
         
         </div>
-        <div className="w-1/4 min-w-[400px] bg-[hsl(0,0%,98%)] m-2">
+        <div className="w-1/4 min-w-[400px] relative m-2">
+        <div className="bg-[hsl(0,0%,98%)] absolute inset-0 top-1/4 -z-10"></div>
       <div className="flex justify-center my-4 " onClick={changeSlide}>
         <img src={slides[1].image} alt="" srcset="" className='w-1/5 mt-8'/>
         </div>
         <h4 className="text-center text-[1.2rem] font-bold text-[hsl(228,39%,23%)] mt-8">{slides[1].name}</h4>
         <p className=" text-center  text-[hsl(227,12%,61%)] my-2 w-4/5 m-auto mt-8 leading-relaxed text-base">{slides[1].text}</p>
         </div>
-        <div className="w-1/4 min-w-[400px] bg-[hsl(0,0%,98%)] m-2">
+        <div className="w-1/4 min-w-[400px] m-2 relative">
+        <div className="bg-[hsl(0,0%,98%)] absolute inset-0 top-1/4 -z-10"></div>
       <div className="flex justify-center my-4 " onClick={changeSlide}>
         <img src={slides[2].image} alt="" srcset="" className='w-1/5 mt-8'/>
         </div>
         <h4 className="text-center text-[1.2rem] font-bold text-[hsl(228,39%,23%)] mt-8">{slides[2].name}</h4>
         <p className=" text-center  text-[hsl(227,12%,61%)] my-2 w-4/5 m-auto mt-8 leading-relaxed text-base">{slides[2].text}</p>
         </div>
-        <div className="w-1/4 min-w-[400px] bg-[hsl(0,0%,98%)] m-2">
+        <div className="w-1/4 min-w-[400px] relative m-2">
+        <div className="bg-[hsl(0,0%,98%)] absolute inset-0 top-1/4 -z-10"></div>
       <div className="flex justify-center my-4 " onClick={changeSlide}>
         <img src={slides[3].image} alt="" srcset="" className='w-1/5 mt-8'/>
         </div>
